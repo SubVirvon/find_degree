@@ -15,7 +15,7 @@ namespace find_degree
             int numberToCompare = random.Next(range);
             int numberToExponentiate = 2;
             int degree = 2;
-            int result = int.MinValue;
+            double result = float.MinValue;
             bool isFound = false;
 
             while (isFound == false)
@@ -23,7 +23,7 @@ namespace find_degree
                 if(result <= numberToCompare)
                 {
                     degree++;
-                    result = Convert.ToInt32(Math.Pow(numberToExponentiate, degree));
+                    result = Math.Pow(numberToExponentiate, degree);
                 }
                 else
                 {
